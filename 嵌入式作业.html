@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>&#x5d4c;&#x5165;&#x5f0f;&#x4f5c;&#x4e1a;</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <h3 id="嵌入式作业">嵌入式作业</h3>
+<h4 id="姓名-刘浩男">姓名: 刘浩男</h4>
+<h4 id="学号-24011211245">学号: 24011211245</h4>
+<ul>
+<li>嵌入式Linux的了解</li>
+</ul>
+<ol>
+<li>了解了什么是Linux以及其基本的用法一些基本的嵌入式Linux的操作，相比于本科来说，了解了在裸机程序之外的Linux操作，并且学习了基本的命令。了解了Linux系统相比之于Windows的优势(开源)，可以比较好的了解系统编程，了解到Linux下面驱动的编写，以及如何编写Linux驱动并且测试。了解如何开启使用Linux虚拟机，了解了一部分Linux发行版(Ubuntu , Debian , Centos , Fedora , RedHat)之间的区别，和他们采用的包管理器的不同，Ubuntu采用的是apt包管理器，Fedora采用的是dnf包管理器，并且学习了ls ，cd ， mv ，rm等基本的Linux指令，更进一步的，了解了Linux的系统调用。</li>
+<li>了解了嵌入式的的基本架构ARM,以及嵌入式的编程原理。了解了ARM架构和X86架构的不同以如此带来的交叉编译的问题，以及如何在X86的主机上交叉编译ARMC的方法。</li>
+<li>了解了如何使用Git来进行版本管理，从Github上下载程序。</li>
+<li>了解了如何构建自己的C程序，在Linux平台上使用Make作为构建工具来构建C程序。</li>
+<li>了解如何SSH登陆远程的计算机。</li>
+<li>困难解决方法: StackOverflow上查找解决方法。</li>
+<li>建议:本课程非常好。</li>
+</ol>
+<ul>
+<li>环境准备</li>
+</ul>
+<ol>
+<li>宿主机的环境: Linux发行版华为OpenEular(当然准备Ubuntu也可以)</li>
+</ol>
+<img src = "./img/OpenEular.png" alt = "OpenEular">
+<ol start="2">
+<li>编程语言选型: C , RUST ,ZIG</li>
+</ol>
+<ul>
+<li>为什么选择C语言,因为C语言是操作系统的语言，其他语言需要和硬件打交道都是通过操作系统，不可避免的会和C语言打交道。</li>
+</ul>
+<img src = "./img/c.png" alt = "c-language">
+<ul>
+<li>为什么选择RUST语言，因为RUST是一门新晋的系统级别编程语言，可以更加安全的和系统打交道，防止C语言的不安全机制(如野指针)等对于计算机系统造成潜在的危害，例如scanf对于缓冲区的处理不当对于计算机造成的潜在危害。</li>
+</ul>
+<img src = "./img/rust.png" alt = "rust-language">
+<ul>
+<li>为什么选用Zig语言，因为其完全兼容C语言，号称Modern C引入了许多高级语言特性而没有带来性能上的损失。</li>
+</ul>
+<img src = "./img/Zig.png" alt = "zig-lang">
+<ol start="3">
+<li>
+<p>编译工具gcc和llvm</p>
+</li>
+<li>
+<p>虚拟环境的选择： 由于宿主机为Linux环境，虚拟化便舍弃VMware,采用经典的QEMU+KVM的虚拟化方案，又因为采用的宿主机是X86的架构。而后面需要虚拟的开发板为ARM架构，所以采用了QEMU虚拟开发板。[Problem1] : 这里需要编译Linux源码并且构建文件系统，比较麻烦，可以参考网上教程。</p>
+</li>
+<li>
+<p>文本编辑器: Vim</p>
+</li>
+<li>
+<p>构建工具: Make和CMake(C语言)，RUST和Zig用其原生的就可以了。</p>
+</li>
+<li>
+<p>作业的选题： 1.基本的文件I/O ， 2.多线程编程， 3. 网络编程</p>
+</li>
+<li>
+<p>为什么选这三个题材: 因为这三个题目之间之间有着递进的关系，前一个是后一个的基础，首先是基本的文件I/O,由于基本的文件I/O的效率不高，并且对于有着一定并发量的场景支持的不好(详细的例子可以看后面张三和李四的例子)，所以引出多线程(进程)编程，[Problem2] : 多线程的程序调试起来非常麻烦，并且GDB不能很好的调试这类程序，所以采用了一个简单(简陋)的日志系统，也许以后可以找到更好的方法。采用多个进程或线程对于文件进行操作，并且更进一步的，由于Linux一切皆文件的思想，对于网络套接字socket也是一种文件，完全可以按照操作文件的方法对于网络socket采取读写，可以按照上面的对于文件的操作来控制网络。更进一步的，为了进一步的提高网络服务的性能，可以采取一种多路I/O复用的技术继续提高网络的性能，中心点集中，围绕着一个I/O问题不断的提升其性能。</p>
+</li>
+</ol>
+<ul>
+<li>基础的文件I/O问题(拓展: 高级I/O)</li>
+</ul>
+<ol>
+<li>问题的导入: 本科时期的C语言打开文件的示例程序如下:</li>
+</ol>
+<pre><code class="language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdlib.h&gt;</span></span>
+
+<span class="hljs-meta">#<span class="hljs-keyword">define</span> MAXLEN 1024 <span class="hljs-comment">//最多读取1024个字节</span></span>
+
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">(<span class="hljs-type">int</span> argc , <span class="hljs-type">char</span> *argv[])</span>{
+	FILE *Need_to_read = <span class="hljs-literal">NULL</span>;
+	<span class="hljs-type">const</span> <span class="hljs-type">char</span>* file_path = <span class="hljs-string">&quot;hello.txt&quot;</span>;
+	Need_to_read = fopen(file_path, <span class="hljs-string">&quot;r&quot;</span>);
+	<span class="hljs-keyword">if</span>(Need_to_read == <span class="hljs-literal">NULL</span>){
+		<span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;读取文件错误，请检查对应的文件路径&quot;</span>);
+		<span class="hljs-built_in">exit</span>(<span class="hljs-number">-1</span>);
+	}
+
+	fseek(Need_to_read, <span class="hljs-number">0</span> , SEEK_END);
+	<span class="hljs-type">const</span> <span class="hljs-type">long</span> file_size = ftell(Need_to_read);
+    <span class="hljs-keyword">if</span>(file_size &gt; MAXLEN){
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;[Error] : file_size 必须小于MAXLEN&quot;</span>);
+        <span class="hljs-built_in">exit</span>(<span class="hljs-number">-1</span>);
+    }
+	fseek(Need_to_read,<span class="hljs-number">0</span>,SEEK_SET);
+
+	<span class="hljs-type">char</span> * content = (<span class="hljs-type">char</span> *)<span class="hljs-built_in">malloc</span>(<span class="hljs-keyword">sizeof</span>(<span class="hljs-type">char</span>) * (file_size + <span class="hljs-number">1</span>));
+	<span class="hljs-keyword">if</span>(content == <span class="hljs-literal">NULL</span>){
+		<span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;分配内存失败，请检查自己的计算机&quot;</span>);
+		<span class="hljs-built_in">exit</span>(<span class="hljs-number">-1</span>);
+	}
+	fread(content , <span class="hljs-number">1</span> , file_size , Need_to_read);
+
+	content[file_size] = <span class="hljs-string">&#x27;\0&#x27;</span>;
+	<span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;content is %s&quot;</span>,content);
+    fclose(Need_to_read);
+	<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+
+}
+</code></pre>
+<p>然后使用gcc -o hw1_1 hw1_1.c 运行这个文件，发现在终端上已经打印出了hello.txt中的文本内容，但是经过资料查找可以发现fopen,fread,fclose是c标准库中的函数，对于不同的平台(具体来说就是不同的操作系统)其底层调用是不同的，对于Unix类的操作系统而言，其系统调用是open,而对于win平台来说，其系统调用是_open,所以如果需要底层调用操作系统提供的服务，就需要运用操作系统上的open函数。</p>
+<ol start="2">
+<li>什么是系统调用
+如果需要了解什么是系统调用，那么就必须了解什么是操作系统。在本科时期，我们已经写过裸机程序(STM32,C51)等，在那些单片机中，我们直接和硬件设备打交道，可以直接操作硬件。但是这样太麻烦，并且还带来了安全性问题，所以简而言之，操作系统是一个负责上层应用和硬件的一个中间层。更进一步的，操作系统将程序划分成用户态和内核态。内核态中负责和底层的硬件设备打交道。举个例子，open函数，可以发现:</li>
+</ol>
+<pre><code class="language-c"><span class="hljs-type">int</span> <span class="hljs-title function_">open</span><span class="hljs-params">(<span class="hljs-type">const</span> <span class="hljs-type">char</span> *pathname, <span class="hljs-type">int</span> flags, ...)</span> {
+    <span class="hljs-keyword">return</span> syscall(SYS_open, pathname, flags);
+}
+</code></pre>
+<p>其中返回了一个Syscall,系统通过这个指令陷入内核态，之后再运行真正的系统的调用。</p>
+<ol start="3">
+<li>系统调用来解决上面的问题
+下面C语言:</li>
+</ol>
+<pre><code class="language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;fcntl.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;unistd.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdlib.h&gt;</span></span>
+
+<span class="hljs-meta">#<span class="hljs-keyword">define</span> MAXLEN 1024</span>
+<span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">myfile</span>{</span>
+	<span class="hljs-type">const</span> <span class="hljs-type">char</span> * file_path;
+	<span class="hljs-type">int</span> fd;
+	<span class="hljs-type">char</span> content[MAXLEN];
+};
+
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">(<span class="hljs-type">int</span> argc , <span class="hljs-type">char</span> * argv[])</span>{
+     <span class="hljs-type">const</span> <span class="hljs-type">char</span> *f_p = <span class="hljs-string">&quot;../hello.txt&quot;</span>;
+     <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">myfile</span> *<span class="hljs-title">f</span> =</span> (<span class="hljs-keyword">struct</span> myfile *)<span class="hljs-built_in">malloc</span>(<span class="hljs-keyword">sizeof</span>(<span class="hljs-keyword">struct</span> myfile));
+     <span class="hljs-keyword">if</span>(f == <span class="hljs-literal">NULL</span>){
+     	<span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;内存分配失败&quot;</span>);
+	    <span class="hljs-built_in">exit</span>(<span class="hljs-number">-1</span>);
+     }
+     f-&gt;file_path = f_p;
+     f-&gt;fd = open(f-&gt;file_path , O_RDWR);
+     <span class="hljs-keyword">if</span>(f-&gt;fd == <span class="hljs-number">-1</span>){
+	     <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;打开文件失败，请设置合适的文件路径&quot;</span>);
+	     <span class="hljs-built_in">exit</span>(<span class="hljs-number">-1</span>);
+     }
+     <span class="hljs-type">ssize_t</span> n = read(f-&gt;fd , f-&gt;content , <span class="hljs-keyword">sizeof</span>(f-&gt;content));
+     <span class="hljs-keyword">if</span>( n == <span class="hljs-number">-1</span>){
+     	<span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;读取文件中的内容失败&quot;</span>);
+	    <span class="hljs-built_in">exit</span>(<span class="hljs-number">-1</span>);
+     }
+     <span class="hljs-type">ssize_t</span> n2 = write(STDOUT_FILENO,f-&gt;content,n);
+     <span class="hljs-keyword">if</span>( n2 == <span class="hljs-number">-1</span>){
+     	<span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;写入文件到标准输出失败&quot;</span>);
+	    <span class="hljs-built_in">exit</span>(<span class="hljs-number">-1</span>);
+     }
+     close(f-&gt;fd);
+     <span class="hljs-built_in">free</span>(f);
+     <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<p>从上面的C语言的程序中可以看出，采用了linux系统(其他的类似Unix的操作系统也可以)调用，在win平台上发现无法运行。也是说这样的程序有平台相关性，对于不同体系的操作系统可能无法编译。并且更进一步的，由上面open的原理部分可见，在系统调用open函数之后，系统就通过Syscall陷入内核态来读取文件。</p>
+<p>目前的问题: 从后面的网络编程的例子马上可以看到，如此实现的i/o操作是低效的，read/write操作是同步阻塞的，也就是说假设有张三和李四访问了该服务器，张三先访问，然后执行了一个较大的文件I/O操作(下载个4K电影啥的)，由于Open是同步阻塞的，李四就必须等张三下载完成才可以执行操作，显然这个是不合理的。并且相对比与fread来说，没有缓存，每次读取都需要进入内核态，显然大大的增加了操作的时间，降低了效率。此外，如此设计也只能保证文件系统从一个fd中读取文件，对于多个fd只能是先读完一个再去读另一个，效果不好。</p>
+<img src = "./img/open的缺点.png" alt = "open">
+<ol start="4">
+<li>多进程多线程编程</li>
+</ol>
+<ul>
+<li>
+<p>以这个读取文件的例子展开，一个自然的想法是运用机器来处理不同的读取文件的请求，在同一个机器上创建多个虚拟机来完成这个任务，可喜的是，操作系统已经给我们提供了一种轻量化的方式，无需创建虚拟机，那就是进程和更轻量化的线程，并且就上面那个张三和李四的例子展开，我们希望张三和李四每个人对应一个进程或线程，然后由这个进程和线程展开服务，访问对应的文件I/O，由于操作系统自己自带对于线程和进程的管理，使得张三和李四都有一个与之对应的进程或线程。</p>
+</li>
+<li>
+<p>多线程多进程编程</p>
+</li>
+</ul>
+<ol>
+<li>先完成一些基本的知识，首先是进程之间的通信。通常来说，进程之间的通信可以消息传递，信号量和锁，共享内存，以及RPC等。这里我们采取前三个来实现。</li>
+</ol>
+<ul>
+<li>首先是管道，这是一种比较古老的通行方法，虽然，通常来说，在现代的技术下面管道可以和没有派生关系的进程之间使用，但是通常还是在fork出来的进程中使用。下面是一个使用案例(单向管道)</li>
+</ul>
+<pre><code class="language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;unistd.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;string.h&gt;</span></span>
+
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span> {
+    <span class="hljs-type">int</span> pipefd[<span class="hljs-number">2</span>]; <span class="hljs-comment">// 定义管道文件描述符</span>
+    <span class="hljs-type">pid_t</span> pid;
+    <span class="hljs-type">char</span> buffer[<span class="hljs-number">100</span>];
+    <span class="hljs-type">const</span> <span class="hljs-type">char</span> *message = <span class="hljs-string">&quot;Hello from parent process!&quot;</span>;
+    
+    <span class="hljs-comment">// 创建管道</span>
+    <span class="hljs-keyword">if</span> (pipe(pipefd) == <span class="hljs-number">-1</span>) {
+        perror(<span class="hljs-string">&quot;pipe&quot;</span>);
+        <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+    }
+
+    <span class="hljs-comment">// 创建子进程</span>
+    pid = fork();
+    <span class="hljs-keyword">if</span> (pid == <span class="hljs-number">-1</span>) {
+        perror(<span class="hljs-string">&quot;fork&quot;</span>);
+        <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+    }
+
+    <span class="hljs-keyword">if</span> (pid == <span class="hljs-number">0</span>) { <span class="hljs-comment">// 子进程</span>
+        close(pipefd[<span class="hljs-number">1</span>]); <span class="hljs-comment">// 关闭写端</span>
+        read(pipefd[<span class="hljs-number">0</span>], buffer, <span class="hljs-keyword">sizeof</span>(buffer)); <span class="hljs-comment">// 从管道读取数据</span>
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;Child received: %s\n&quot;</span>, buffer);
+        close(pipefd[<span class="hljs-number">0</span>]); <span class="hljs-comment">// 关闭读端</span>
+    } <span class="hljs-keyword">else</span> { <span class="hljs-comment">// 父进程</span>
+        close(pipefd[<span class="hljs-number">0</span>]); <span class="hljs-comment">// 关闭读端</span>
+        write(pipefd[<span class="hljs-number">1</span>], message, <span class="hljs-built_in">strlen</span>(message) + <span class="hljs-number">1</span>); <span class="hljs-comment">// 向管道写入数据</span>
+        close(pipefd[<span class="hljs-number">1</span>]); <span class="hljs-comment">// 关闭写端</span>
+    }
+
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<p>从上面的程序中可以看出父进程fork了一个子进程并且通过管道和子进程进行交互，通过Pipe,并且显然的pipe只能是一个半双工的管道，不能两者同时收发，并且pipe[0]是接收端，pipe[1]是写入端。此外，由于LINUX遵守了Unix一切皆文件的思想，所以pipe也是按文件操作的。由上面的例子可以知晓，遵守了生产者消费者模型，但是这样的传递效率不高效。下面便开始使用信号量来传递信息。下面是实例程序</p>
+<pre><code class="language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdlib.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;unistd.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;semaphore.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;sys/wait.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;sys/types.h&gt;</span></span>
+
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span> {
+    <span class="hljs-type">sem_t</span> sem; <span class="hljs-comment">// 定义信号量</span>
+    <span class="hljs-type">pid_t</span> pid;
+
+    <span class="hljs-comment">// 初始化信号量，初始值为1</span>
+    <span class="hljs-keyword">if</span> (sem_init(&amp;sem, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>) == <span class="hljs-number">-1</span>) {
+        perror(<span class="hljs-string">&quot;sem_init&quot;</span>);
+        <span class="hljs-built_in">exit</span>(EXIT_FAILURE);
+    }
+
+    <span class="hljs-comment">// 创建子进程</span>
+    pid = fork();
+    <span class="hljs-keyword">if</span> (pid &lt; <span class="hljs-number">0</span>) {
+        perror(<span class="hljs-string">&quot;fork&quot;</span>);
+        <span class="hljs-built_in">exit</span>(EXIT_FAILURE);
+    }
+
+    <span class="hljs-keyword">if</span> (pid == <span class="hljs-number">0</span>) {
+        <span class="hljs-comment">// 子进程</span>
+        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">5</span>; i++) {
+            sem_wait(&amp;sem); <span class="hljs-comment">// 等待信号量</span>
+            <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;[Child] Working... (Step %d)\n&quot;</span>, i + <span class="hljs-number">1</span>);
+            sleep(<span class="hljs-number">1</span>); <span class="hljs-comment">// 模拟工作</span>
+            sem_post(&amp;sem); <span class="hljs-comment">// 释放信号量</span>
+            sleep(<span class="hljs-number">1</span>);
+        }
+        <span class="hljs-built_in">exit</span>(<span class="hljs-number">0</span>);
+    } <span class="hljs-keyword">else</span> {
+        <span class="hljs-comment">// 父进程</span>
+        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">5</span>; i++) {
+            sem_wait(&amp;sem); <span class="hljs-comment">// 等待信号量</span>
+            <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;[Parent] Working... (Step %d)\n&quot;</span>, i + <span class="hljs-number">1</span>);
+            sleep(<span class="hljs-number">1</span>); <span class="hljs-comment">// 模拟工作</span>
+            sem_post(&amp;sem); <span class="hljs-comment">// 释放信号量</span>
+            sleep(<span class="hljs-number">1</span>);
+        }
+
+        <span class="hljs-comment">// 等待子进程完成</span>
+        wait(<span class="hljs-literal">NULL</span>);
+
+        <span class="hljs-comment">// 销毁信号量</span>
+        sem_destroy(&amp;sem);
+
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;Both processes have completed.\n&quot;</span>);
+    }
+
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<p>显然，可以看到sem_wait()和sem_post()是两个linux提供的最重要的API来控制信号量，这里完成的和上面的Pipe操作也是一样的，但是如果想要更快的通信方式呢，可以使用共享内存的通信方法。</p>
+<pre><code class="language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdlib.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;string.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;sys/ipc.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;sys/shm.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;sys/types.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;unistd.h&gt;</span></span>
+
+<span class="hljs-meta">#<span class="hljs-keyword">define</span> SHM_SIZE 1024  <span class="hljs-comment">// 共享内存的大小</span></span>
+
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span> {
+    <span class="hljs-type">key_t</span> key;
+    <span class="hljs-type">int</span> shmid;
+    <span class="hljs-type">char</span> *data;
+
+    <span class="hljs-comment">// 创建共享内存的键</span>
+    key = ftok(<span class="hljs-string">&quot;shmfile&quot;</span>, <span class="hljs-number">65</span>);
+    <span class="hljs-keyword">if</span> (key == <span class="hljs-number">-1</span>) {
+        perror(<span class="hljs-string">&quot;ftok&quot;</span>);
+        <span class="hljs-built_in">exit</span>(EXIT_FAILURE);
+    }
+
+    <span class="hljs-comment">// 创建共享内存</span>
+    shmid = shmget(key, SHM_SIZE, <span class="hljs-number">0666</span> | IPC_CREAT);
+    <span class="hljs-keyword">if</span> (shmid == <span class="hljs-number">-1</span>) {
+        perror(<span class="hljs-string">&quot;shmget&quot;</span>);
+        <span class="hljs-built_in">exit</span>(EXIT_FAILURE);
+    }
+
+    <span class="hljs-comment">// 创建子进程</span>
+    <span class="hljs-type">pid_t</span> pid = fork();
+    <span class="hljs-keyword">if</span> (pid &lt; <span class="hljs-number">0</span>) {
+        perror(<span class="hljs-string">&quot;fork&quot;</span>);
+        <span class="hljs-built_in">exit</span>(EXIT_FAILURE);
+    }
+
+    <span class="hljs-keyword">if</span> (pid == <span class="hljs-number">0</span>) {
+        <span class="hljs-comment">// 子进程：写入共享内存</span>
+        data = (<span class="hljs-type">char</span> *)shmat(shmid, (<span class="hljs-type">void</span> *)<span class="hljs-number">0</span>, <span class="hljs-number">0</span>);
+        <span class="hljs-keyword">if</span> (data == (<span class="hljs-type">char</span> *)(<span class="hljs-number">-1</span>)) {
+            perror(<span class="hljs-string">&quot;shmat&quot;</span>);
+            <span class="hljs-built_in">exit</span>(EXIT_FAILURE);
+        }
+
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;[Child] Writing to shared memory...\n&quot;</span>);
+        <span class="hljs-built_in">strcpy</span>(data, <span class="hljs-string">&quot;Hello from child process!&quot;</span>);
+        shmdt(data);  <span class="hljs-comment">// 断开共享内存</span>
+        <span class="hljs-built_in">exit</span>(<span class="hljs-number">0</span>);
+    } <span class="hljs-keyword">else</span> {
+        <span class="hljs-comment">// 父进程：读取共享内存</span>
+        wait(<span class="hljs-literal">NULL</span>);  <span class="hljs-comment">// 等待子进程完成</span>
+
+        data = (<span class="hljs-type">char</span> *)shmat(shmid, (<span class="hljs-type">void</span> *)<span class="hljs-number">0</span>, <span class="hljs-number">0</span>);
+        <span class="hljs-keyword">if</span> (data == (<span class="hljs-type">char</span> *)(<span class="hljs-number">-1</span>)) {
+            perror(<span class="hljs-string">&quot;shmat&quot;</span>);
+            <span class="hljs-built_in">exit</span>(EXIT_FAILURE);
+        }
+
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;[Parent] Reading from shared memory: %s\n&quot;</span>, data);
+        shmdt(data);  <span class="hljs-comment">// 断开共享内存</span>
+
+        <span class="hljs-comment">// 删除共享内存</span>
+        shmctl(shmid, IPC_RMID, <span class="hljs-literal">NULL</span>);
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;[Parent] Shared memory deleted.\n&quot;</span>);
+    }
+
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<p>可见共享内存的方式是通信最快的(线程也是共享内存)，但是隔离性也是最差的。</p>
+<ul>
+<li>网络编程
+linux为我们提供了socketAPI让我们可以专注于网络编程本身，网络编程的过程可以简化为下面这张示意图
+<img src = "./img/1.svg">
+而启动socket的流程可以是linux提供的一套API,服务器端和客户端略有不同，在服务器端，流程是这样的:</li>
+</ul>
+<ol>
+<li>创建 Socket : 使用 socket() 创建一个套接字，指定协议族、套接字类型和协议,通常协议族为 AF_INET（IPv4），套接字类型为 SOCK_STREAM（TCP）.</li>
+<li>绑定地址和端口 : 使用 bind() 将套接字与服务器的 IP 地址和端口号绑定.</li>
+<li>接受连接 : 使用 accept() 等待客户端连接，成功后返回一个新的套接字和客户端的地址信息。</li>
+<li>数据传输 : 使用 send() 和 recv() 在客户端和服务器之间进行数据的发送和接收。</li>
+<li>关闭连接 : 通信完成后，使用 close() 关闭套接字。</li>
+</ol>
+<p>在客户端，流程是这样的:</p>
+<ol>
+<li>创建 Socket : 和服务器端一样，使用 socket() 创建一个套接字。</li>
+<li>连接到服务器 ： 使用 connect() 连接到服务器的 IP 地址和端口。</li>
+<li>数据传输 ：  和服务器端一样，使用 send() 和 recv() 进行数据传输</li>
+<li>关闭连接 ：  使用 close() 关闭套接字。</li>
+</ol>
+<p>程序如下:</p>
+<pre><code class="language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdlib.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;string.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;unistd.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;arpa/inet.h&gt;</span></span>
+
+<span class="hljs-meta">#<span class="hljs-keyword">define</span> PORT 12345</span>
+<span class="hljs-meta">#<span class="hljs-keyword">define</span> BUFFER_SIZE 1024</span>
+
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span> {
+    <span class="hljs-type">int</span> sock = <span class="hljs-number">0</span>;
+    <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">sockaddr_in</span> <span class="hljs-title">serv_addr</span>;</span>
+    <span class="hljs-type">char</span> buffer[BUFFER_SIZE] = {<span class="hljs-number">0</span>};
+    <span class="hljs-type">char</span> *message = <span class="hljs-string">&quot;Hello, Server!&quot;</span>;
+
+    <span class="hljs-comment">// 创建 Socket</span>
+    <span class="hljs-keyword">if</span> ((sock = socket(AF_INET, SOCK_STREAM, <span class="hljs-number">0</span>)) &lt; <span class="hljs-number">0</span>) {
+        perror(<span class="hljs-string">&quot;Socket creation failed&quot;</span>);
+        <span class="hljs-built_in">exit</span>(EXIT_FAILURE);
+    }
+
+    <span class="hljs-comment">// 配置服务器地址和端口</span>
+    serv_addr.sin_family = AF_INET;
+    serv_addr.sin_port = htons(PORT);
+
+    <span class="hljs-comment">// 将 IP 地址转换为二进制格式</span>
+    <span class="hljs-keyword">if</span> (inet_pton(AF_INET, <span class="hljs-string">&quot;127.0.0.1&quot;</span>, &amp;serv_addr.sin_addr) &lt;= <span class="hljs-number">0</span>) {
+        perror(<span class="hljs-string">&quot;Invalid address/Address not supported&quot;</span>);
+        close(sock);
+        <span class="hljs-built_in">exit</span>(EXIT_FAILURE);
+    }
+
+    <span class="hljs-comment">// 连接服务器</span>
+    <span class="hljs-keyword">if</span> (connect(sock, (<span class="hljs-keyword">struct</span> sockaddr *)&amp;serv_addr, <span class="hljs-keyword">sizeof</span>(serv_addr)) &lt; <span class="hljs-number">0</span>) {
+        perror(<span class="hljs-string">&quot;Connection failed&quot;</span>);
+        close(sock);
+        <span class="hljs-built_in">exit</span>(EXIT_FAILURE);
+    }
+
+    <span class="hljs-comment">// 数据传输</span>
+    send(sock, message, <span class="hljs-built_in">strlen</span>(message), <span class="hljs-number">0</span>);
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;Message sent: %s\n&quot;</span>, message);
+
+    <span class="hljs-type">int</span> valread = read(sock, buffer, BUFFER_SIZE);
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;Message received: %s\n&quot;</span>, buffer);
+
+    <span class="hljs-comment">// 关闭连接</span>
+    close(sock);
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<p>服务器代码</p>
+<pre><code class="language-c"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdlib.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;string.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;unistd.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;arpa/inet.h&gt;</span></span>
+
+<span class="hljs-meta">#<span class="hljs-keyword">define</span> PORT 12345</span>
+<span class="hljs-meta">#<span class="hljs-keyword">define</span> BUFFER_SIZE 1024</span>
+
+<span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span> {
+    <span class="hljs-type">int</span> server_fd, new_socket;
+    <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">sockaddr_in</span> <span class="hljs-title">address</span>;</span>
+    <span class="hljs-type">int</span> addrlen = <span class="hljs-keyword">sizeof</span>(address);
+    <span class="hljs-type">char</span> buffer[BUFFER_SIZE] = {<span class="hljs-number">0</span>};
+
+    <span class="hljs-comment">// 创建 Socket</span>
+    <span class="hljs-keyword">if</span> ((server_fd = socket(AF_INET, SOCK_STREAM, <span class="hljs-number">0</span>)) == <span class="hljs-number">0</span>) {
+        perror(<span class="hljs-string">&quot;Socket failed&quot;</span>);
+        <span class="hljs-built_in">exit</span>(EXIT_FAILURE);
+    }
+
+    <span class="hljs-comment">// 配置地址和端口</span>
+    address.sin_family = AF_INET;
+    address.sin_addr.s_addr = INADDR_ANY; <span class="hljs-comment">// 监听所有可用地址</span>
+    address.sin_port = htons(PORT);
+
+    <span class="hljs-comment">// 绑定地址和端口</span>
+    <span class="hljs-keyword">if</span> (bind(server_fd, (<span class="hljs-keyword">struct</span> sockaddr *)&amp;address, <span class="hljs-keyword">sizeof</span>(address)) &lt; <span class="hljs-number">0</span>) {
+        perror(<span class="hljs-string">&quot;Bind failed&quot;</span>);
+        close(server_fd);
+        <span class="hljs-built_in">exit</span>(EXIT_FAILURE);
+    }
+
+    <span class="hljs-comment">// 开始监听</span>
+    <span class="hljs-keyword">if</span> (listen(server_fd, <span class="hljs-number">3</span>) &lt; <span class="hljs-number">0</span>) {
+        perror(<span class="hljs-string">&quot;Listen failed&quot;</span>);
+        close(server_fd);
+        <span class="hljs-built_in">exit</span>(EXIT_FAILURE);
+    }
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;Server is listening on port %d...\n&quot;</span>, PORT);
+
+    <span class="hljs-comment">// 等待连接</span>
+    <span class="hljs-keyword">if</span> ((new_socket = accept(server_fd, (<span class="hljs-keyword">struct</span> sockaddr *)&amp;address, (<span class="hljs-type">socklen_t</span> *)&amp;addrlen)) &lt; <span class="hljs-number">0</span>) {
+        perror(<span class="hljs-string">&quot;Accept failed&quot;</span>);
+        close(server_fd);
+        <span class="hljs-built_in">exit</span>(EXIT_FAILURE);
+    }
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;Connection established.\n&quot;</span>);
+
+    <span class="hljs-comment">// 数据传输</span>
+    <span class="hljs-keyword">while</span> (<span class="hljs-number">1</span>) {
+        <span class="hljs-type">int</span> valread = read(new_socket, buffer, BUFFER_SIZE);
+        <span class="hljs-keyword">if</span> (valread &lt;= <span class="hljs-number">0</span>) {
+            <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;Connection closed.\n&quot;</span>);
+            <span class="hljs-keyword">break</span>;
+        }
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;Received: %s\n&quot;</span>, buffer);
+        send(new_socket, buffer, <span class="hljs-built_in">strlen</span>(buffer), <span class="hljs-number">0</span>); <span class="hljs-comment">// 回显消息</span>
+        <span class="hljs-built_in">memset</span>(buffer, <span class="hljs-number">0</span>, BUFFER_SIZE);
+    }
+
+    <span class="hljs-comment">// 关闭连接</span>
+    close(new_socket);
+    close(server_fd);
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+
+</code></pre>
+<h2 id="实验结果">实验结果</h2>
+<p>实验的源代码都放在c文件夹下面,运行run.sh脚本便可以得到全部实验的结果。并且环境运行的话应该安装了GCC就可以了，shell使用的是bash shell.rust和zig的话按照官网上的建议安装便可。实验感想：无。程序运行结果:
+实验1_1:
+<img src = "./img/hw1.png">
+实验1_2:
+<img src = "./img/hw12.png">
+实验2_2:
+<img src = "./img/hw22.png">
+实验3：
+<img src = "./img/hw3.png"></p>
+
+            
+            
+        </body>
+        </html>

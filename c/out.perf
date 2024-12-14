@@ -1,0 +1,43 @@
+hw1_2   61547  2947.849741:          1 cycles:Pu: 
+	ffffffffb1201280 [unknown] ([unknown])
+	    71a753b55dc0 [unknown] (/usr/lib/ld-linux-x86-64.so.2)
+
+hw1_2   61547  2947.849751:          1 cycles:Pu: 
+	    71a753b55dc3 [unknown] (/usr/lib/ld-linux-x86-64.so.2)
+
+hw1_2   61547  2947.849753:          1 cycles:Pu: 
+	ffffffffb1201280 [unknown] ([unknown])
+	    71a753b55dc3 [unknown] (/usr/lib/ld-linux-x86-64.so.2)
+
+hw1_2   61547  2947.849757:          4 cycles:Pu: 
+	ffffffffb1201280 [unknown] ([unknown])
+	    71a753b56b41 [unknown] (/usr/lib/ld-linux-x86-64.so.2)
+	    71a753b55dc8 [unknown] (/usr/lib/ld-linux-x86-64.so.2)
+
+hw1_2   61547  2947.849761:         65 cycles:Pu: 
+	    71a753b56cd5 [unknown] (/usr/lib/ld-linux-x86-64.so.2)
+	    71a753b55dc8 [unknown] (/usr/lib/ld-linux-x86-64.so.2)
+
+hw1_2   61547  2947.849762:        603 cycles:Pu: 
+	ffffffffb1201298 [unknown] ([unknown])
+	    71a753b56df3 [unknown] (/usr/lib/ld-linux-x86-64.so.2)
+	    71a753b55dc8 [unknown] (/usr/lib/ld-linux-x86-64.so.2)
+
+hw1_2   61547  2947.849769:       5792 cycles:Pu: 
+	ffffffffb1201280 [unknown] ([unknown])
+	    71a753b496d0 [unknown] (/usr/lib/ld-linux-x86-64.so.2)
+	    71a753b55dc8 [unknown] (/usr/lib/ld-linux-x86-64.so.2)
+
+hw1_2   61547  2947.849851:      95568 cycles:Pu: 
+	ffffffffb1065035 [unknown] ([unknown])
+	ffffffffb120128d [unknown] ([unknown])
+	    71a753b401fb [unknown] (/usr/lib/ld-linux-x86-64.so.2)
+	    71a753b41000 [unknown] (/usr/lib/ld-linux-x86-64.so.2)
+	    71a753b3b8bd [unknown] (/usr/lib/ld-linux-x86-64.so.2)
+	    71a753b3a523 _dl_catch_exception+0xa3 (/usr/lib/ld-linux-x86-64.so.2)
+	    71a753b3bd45 [unknown] (/usr/lib/ld-linux-x86-64.so.2)
+	    71a753b58d1f [unknown] (/usr/lib/ld-linux-x86-64.so.2)
+	    71a753b55786 [unknown] (/usr/lib/ld-linux-x86-64.so.2)
+	    71a753b570de [unknown] (/usr/lib/ld-linux-x86-64.so.2)
+	    71a753b55dc8 [unknown] (/usr/lib/ld-linux-x86-64.so.2)
+
